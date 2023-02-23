@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>새미네부엌</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script>
+        $('.depth1').mouseenter(function(){
+      $(this).find('.depth2').slideDown();
+    }).mouseleave(function(){
+      $(this).find('.depth2').hide();
+    });
+  </script>
+  <style>
+    .search-wrap {
+      
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap"> <!-- 전체 -->
+
+    <header> <!-- 헤더 -->
+      <h1><a href="./index.html"><img src="./img/logo.png" alt="로고"></a></h1>
+      <nav class="gnb">
+        <div class="hambuger">
+          <img src="./img/hambuger.png" alt="전체메뉴">
+        </div>
+        <ul>
+          <li class="depth1">
+            <a href="#">브랜드</a>
+            <div class="depth2">
+              <ul>
+                <li><a href="#">브랜드소개</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">제품</a>
+            <div class="depth2">
+              <ul>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">김치양념</a></li>
+                <li><a href="#">반찬소스</a></li>
+                <li><a href="#">딥소스</a></li>
+                <li><a href="#">초요리소스</a></li>
+                <li><a href="#">간장</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">레시피</a>
+            <div class="depth2">
+              <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">김치 레시피</a></li>
+                <li><a href="#">반찬 레시피</a></li>
+                <li><a href="#">소스 레시피</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">이벤트</a>
+            <div class="depth2">
+              <ul>
+                <li><a href="#">첫구매 이벤트</a></li>
+                <li><a href="#">기획전</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">고객센터</a>
+            <div class="depth2">
+              <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">Q&A</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 검색창 -->
+      <div class="search"> 
+        <form>
+          <input type="text" id="search" name="search">
+          <button><img src="./img/search.png" alt="검색하기"></button>
+        </form>
+      </div>
+      
+      <nav class="user"> <!-- 사용자 환경 -->
+        <ul>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">장바구니</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section> <!-- 제품 -->
+      <div class="clearfix">
+        <h2>PRODUCT</h2>
+
+        <div class="button">
+          <input type="button" id="button1" value="베스트">
+          <input type="button" id="button2" value="세일중">
+        </div>
+      </div>
+        <div class="pro-wrap clearfix"> <!-- 제품박스 -->
+
+          <div class="box">
+            <a href="#">
+            <div class="product-img"><img src="./img/kimchi-01.png" alt=""></div>
+            <div class="product-text">
+              <p class="best">BEST !</p>
+              <p class="text1">절이지 않고 5분 완성!</p>
+              <h3>겉절이 양념</h3>
+              <p class="text3">33%</p>
+              <p class="text4"><del>2,980원</del></p>
+              <p class="text5">1,980원</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+            <div class="product-img"><img src="./img/banchan-02.png" alt=""></div>
+            <div class="product-text">
+              <p class="best">BEST !</p>
+              <p class="text1">팬 하나로 10분 완성!</p>
+              <h3>잡채소스</h3>
+              <p class="text3">8%</p>
+              <p class="text4"><del>3,900원</del></p>
+              <p class="text5">3,580원</p>
+            </div>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="#">
+            <div class="product-img"><img src="./img/kimchi-02.png" alt=""></div>
+            <div class="product-text">
+              <p class="best">BEST !</p>
+              <p class="text1">무 썰고 양념 넣고 깍두기 완성!</p>
+              <h3>깍두기 양념</h3>
+              <p class="text3">33%</p>
+              <p class="text4"><del>2,980원</del></p>
+              <p class="text5">1,980원</p>
+            </div>
+            </a>
+          </div>
+        
+          <div class="box">
+            <a href="#">
+            <div class="product-img"><img src="./img/kimchi-04.png" alt=""></div>
+            <div class="product-text">
+              <p class="best">BEST !</p>
+              <p class="text1">절이지 않고 5분 완성!</p>
+              <h3>오이소박이 양념</h3>
+              <p class="text3">33%</p>
+              <p class="text4"><del>2,980원</del></p>
+              <p class="text5">1,980원</p>
+            </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="btn-wrap">
+          <a href="#"><img src="./img/prev.png" alt=""></a>
+          <a href="#"><img src="./img/next.png" alt=""></a>
+        </div>
+    </section>
+
+    <article> <!-- 설명 -->
+      <div class="article">
+        <div class="container">
+          <div class="article1">
+            <div class="text1">
+              <p class="a-text1">즐거운 요리 혁명, 새미네부엌</p>
+              <p class="a-text2">누구나 요리를 쉽고 맛있게!</p>
+              <p class="a-text3">재료 준비와 조리법을 쉽게! 만드는과정은 즐겁게!<br>누가 만들어도 맛있게 먹을 수 있도록 연구했습니다.
+              <p class="a-text4">새미네부엌에서는 요리가 놀이가 되고, 부엌이 놀이터가 됩니다.</p>
+            </div>
+            <div class="article-img1"><img src="./img/article1.jpg" alt=""></div>
+          </div>
+          <div class="article1">
+            <div class="article-img1"><img src="./img/article2.jpg" alt=""></div>
+            <div class="text1">
+              <p class="a-text1">새미네 양념 하나만 준비하면</p>
+              <p class="a-text2">재료준비없이 절이지 않고 썰고 끝!</p>
+              <p class="a-text3">오늘 뭐 해먹지? 어떻게 요리하지?<br>새미네 양념만 있으면 10분 만에 잡채 완성! 5분 만에 겉절이 완성!
+              <p class="a-text4">걱정하지 말고 새미네부엌으로 놀러오세요!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer> <!-- 푸터 -->
+      <div class="container">
+        <div class="foot-wrap">
+          <div class="foot-logo"><img src="./img/logo.png" alt="">
+          </div>
+          <div class="foot-copy">
+            <div class="foot-notice1 clearfix">
+              <ul>
+                <li><a href="">이용약관</a></li>
+                <li><a href=""><b>개인정보처리방침</b></a></li>
+                <li><a href="">공시정보관리규정</a></li>
+              </ul>
+            </div>
+            <div class="foot-notice2">
+              <ul>
+                <li>서울시 중구 충무로2 샘표 식품 주식회사</li>
+                <li>우)04577</li>
+                <li>고객지원실 : 080-996-7777</li>
+                <li>FAX : 070-4275-5285</li>
+              </ul>
+              <p>Copyright ⓒ SEMPIO FOODS COMPANY. ALL RIGHTS RESERVED</p>
+            </div>
+          </div>
+          <div class="foot-notice3">
+            <!-- <p>패밀리 사이트</p>
+            <ul>
+              <li><a href="#">샘표</a></li>
+              <li><a href="#">연두</a></li>
+              <li><a href="#">폰타나</a></li>
+              <li><a href="#">티·아시아키친</a></li>
+              <li><a href="#">샘표 채용</a></li>
+            </ul> -->
+            <select>
+              <option>패밀리 사이트</option>
+              <option>샘표</option>
+              <option>연두</option>
+              <option>폰타나</option>
+              <option>티·아시아키친</option>
+              <option>샘표 채용</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
